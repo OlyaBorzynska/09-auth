@@ -1,9 +1,11 @@
 import { NewNote, Note } from "@/types/note";
 import axios from "axios";
-const myKey = process.env.NEXT_PUBLIC_NOTEHUB_TOKEN;
+// const myKey = process.env.NEXT_PUBLIC_NOTEHUB_TOKEN;
 
-axios.defaults.baseURL = "https://notehub-public.goit.study/api";
-axios.defaults.headers.common["Authorization"] = `Bearer ${myKey}`;
+// axios.defaults.baseURL = "https://notehub-public.goit.study/api";
+// axios.defaults.headers.common["Authorization"] = `Bearer ${myKey}`;
+
+axios.defaults.baseURL = "https://notehub-api.goit.study";
 
 export interface NotesResponse {
   notes: Note[];
