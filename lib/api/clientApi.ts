@@ -17,8 +17,8 @@ type CheckSessionRequest = {
 };
 
 export type UpdateUserRequest = {
-  userName?: string;
-  photoUrl?: string;
+  username?: string;
+  email: string;
 };
 
 export async function fetchNotes(
@@ -76,6 +76,6 @@ export const logout = async (): Promise<void> => {
 };
 
 export const updateMe = async (payload: UpdateUserRequest) => {
-  const res = await nextServer.put<User>("/users/me", payload);
+  const res = await nextServer.patch<User>("/users/me", payload);
   return res.data;
 };

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Page not found",
     description: "Sorry, the page you are looking for does not exist.",
-    url: `https://08-zustand-five-rust.vercel.app/`,
+    url: `https://09-auth-three-snowy.vercel.app/`,
     images: [
       {
         url: "https://ac.goit.global/fullstack/react/notehub-og-meta.jpg",
